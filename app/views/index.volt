@@ -5,8 +5,7 @@
 
 	</head>
 	<body>
-	    You are hacked by Choopan !!!!! !!
-		{{ content() }}
+	    {{ content() }}
 	</body>
 
 </html>

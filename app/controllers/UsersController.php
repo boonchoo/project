@@ -11,12 +11,27 @@ class UsersController extends ControllerBase
      */
     public function indexAction()
     {
-        $this->persistent->parameters = null;
+        $this->persistent->parameters = null;	
     }
 
     /**
      * Searches for users
      */
+	 
+	 
+	 
+ public function showAction()
+    {
+
+	 $users = Users::find();
+     $this->view->setVar("users", $users);
+    }
+
+   
+   
+   
+   
+
     public function searchAction()
     {
 
